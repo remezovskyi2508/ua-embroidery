@@ -58,6 +58,9 @@
 }
 
 @media screen and (min-width: 768px) {
+  .section-testimonials {
+    padding: 50px 0;
+  }
   .section-title {
     font-size: 44px;
     line-height: 1.45;
@@ -76,6 +79,9 @@
 }
 
 @media screen and (min-width: 1280px) {
+  .section-testimonials {
+    padding: 75px 0;
+  }
   .customer-item {
     margin-right: 26px;
   }

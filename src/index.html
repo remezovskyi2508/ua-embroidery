@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#ffffff" />
     <link rel="icon" href="favicon.svg" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="mask-icon" href="mask-icon.svg" color="#000000" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
     <link rel="manifest" href="manifest.json" />
@@ -30,7 +31,6 @@
     <title>Document</title>
   </head>
   <body>
-    
     <header class="header">
       <load src="/partials/header.html" />
     </header>
@@ -46,6 +46,11 @@
       <load src="/partials/footer.html" />
     </footer>
     <load src="/partials/mobile-menu.html" />
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
     <script type="module" src="./main.js"></script>
     <script

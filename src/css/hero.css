@@ -61,6 +61,11 @@
   margin-left: 10px;
   align-self: center;
   justify-self: center;
+  transition: transform 0.4s ease;
+}
+.hero-btn:hover .hero-btn-icon{
+  transform: rotate(120deg);
+  transition: transform 0.4s ease;
 }
 
 .hero-info-block {

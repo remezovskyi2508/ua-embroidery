@@ -1,94 +1,82 @@
-<section class="order-section" id="order">
-  <div class="container order-container">
+<section class="order section-padding">
+  <div class="container is-order">
+    <div class="order-wrap">
+      <h2 class="order-title section-title" id="order">
+        <span class="brand-text-accent">Your order </span>is our priority:
+        Personalized approach and quality of service
+      </h2>
 
-    <ul class="order-section-picture">
-
-      <li class="order-section-li picture">
-
-        <picture >
-          <source media="(min-width:1280px )"
-           srcset="/img/order/desktop-min.jpg 1x,
-            /img/order/desktop@2x-min.jpg 2x ">
-            
-
-           <source media="(min-width:768px)" srcset="/img/order/tablet-min.jpg 1x,
-             /img/order/tablet@2x-min.jpg 2x" width='704' height='521'>
-          
-           <img src="/img/order/desktop-min.jpg" alt="desktop-min"
-           width="588" height="521">
-        </picture> 
-      </li> 
-
-      <li class="order-section-li">
-
-        <ul class="order-form-wrapper">
-
-          <li class="order-former-block">
-
-         <h2 class="your-order-review-form">
-          <span class="accent-color">Your order</span> 
-          is our priority: Personalized approach and quality of service</h2>
-
-          </li>
-
-          <li class="order-form-block">
-
-            <ul class="order-form-review"> 
-               
-         <form class="review-form">
-           <li class="review-form-wrapper">
-
-             <label class="review-form-field-label" for="user-fullname" >
-             <div class="review-form-input-wrapper">
-             <input class="review-form-input input"
-             type="text"  
-             id="user-fullname" 
-             name="user-fullname"
-             placeholder="Enter your full name"
-             pattern="[a-zA-Zа-яА-ЯіІїЇєЄґҐ']+"
-             title="user-fullname"
-             required/>
-            </label>
-           </div>
-          </li>
-
-       <li class="review-form-wrapper">
-         <label class="review-form-field-label" for="user-email" >
-         <div class="review-form-input-wrapper">
-          <input class="review-form-input input"
-           type="email" 
-          id="user-email"
-           name="user-email"
-           placeholder="Enter your email"
-           required/>
-           </label>
-          </div>
-           
-       </li>
-      </ul>
-
-           <ul class="review-form-wrapper-comment">
-            <li>
-            <label class="review-form-field-label" for="user-comment" ></label>
-            <textarea class="review-form-messege" 
-             id="user-comment" 
-             name="user-comment"
-             required
-             placeholder="Coments">Coments
-            </textarea>
-          </li>
-
-          </ul>
-
-          <button class="order-btn " type="submit">Send
-            <svg class="order-btn-icon"  width="24" height="17">
-              <use href="/img/order.picture/icon.svg#icon-untitled"></use>
-            </svg>
-          </button>
-        </form>
-  
-      </div>
+      <form name="order-form">
+        <label class="form-field">
+          <input
+            type="text"
+            name="user-name"
+            class="form-info"
+            placeholder="Enter your full name"
+            required
+            autocapitalize="words"
+            minlength="2"
+            pattern="^[a-zA-Z0-9]+( [a-zA-Z0-9]+){0,2}$"
+            title="John Fitzgerald Kennedy"
+          />
+        </label>
+        <label class="form-field">
+          <input
+            type="email"
+            name="user-email"
+            class="form-info"
+            placeholder="Enter your email"
+            required
+          />
+        </label>
+        <label class="form-field-com">
+          <textarea
+            name="comments"
+            class="form-info form-comments"
+            placeholder="Comments"
+          ></textarea>
+        </label>
+        <button type="submit" class="order-btn main-btn">
+          Send
+          <svg class="order-btn-icon" width="26" height="16">
+            <use href="/img/hero/hero-icon.svg#icon-hero-line"></use>
+          </svg>
+        </button>
+      </form>
     </div>
-        
+
+    <picture
+      class="order-product"
+      data-aos="fade-right"
+      data-aos-duration="1000"
+    >
+      <source
+        srcset="
+          /img/order/your-order-img-desk-lg.jpg    1x,
+          /img/order/your-order-img-desk-lg@2x.jpg 2x
+        "
+        media="(min-width:1440px)"
+      />
+      <source
+        srcset="
+          /img/order/your-order-img-desk-sm.jpg    1x,
+          /img/order/your-order-img-desk-sm@2x.jpg 2x
+        "
+        media="(min-width:1280px)"
+      />
+      <source
+        srcset="
+          /img/order/your-order-img-tab.jpg    1x,
+          /img/order/your-order-img-tab@2x.jpg 2x
+        "
+        media="(min-width:768px)"
+      />
+
+      <img
+        src="/img/order/your-order-img-tab.jpg"
+        class="order-product-image"
+        alt="the-company's-product"
+      />
+    </picture>
   </div>
-    </section>
+</section>

@@ -3,7 +3,7 @@
 /* max-width: 320px; */
 /* } */
 .collection {
-  padding-bottom: 80px;
+  padding-bottom: 40px;
   margin: 0 auto;
 }
 
@@ -108,7 +108,7 @@ img {
 
 @media screen and (min-width:768px) {
   .collection {
-    padding: 25px 0 100px;
+    padding: 25px 0 50px;
   }
   .collection-card {
     display: flex;
@@ -131,6 +131,9 @@ img {
 }
 
 @media screen and (min-width:1280px) {
+  .collection{
+    padding-bottom: 75px;
+  }
   .collection-container{
     margin: 0 auto;
   }

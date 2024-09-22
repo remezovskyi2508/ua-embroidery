@@ -1,198 +1,206 @@
+.order-bground {
+  background-image: url(/img/order/your-order-bground-mob.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+  max-width: 375px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+.main-btn {
+  font-weight: 600;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  color: #fcf9f9;
+  border: 1px solid rgba(252, 249, 249, 0.1);
+  border-radius: 15px;
+  padding: 14px 36px;
+  min-width: 154px;
+  height: 49px;
+  transition: border 350ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
-.picture {
+.section-padding {
+  padding: 40px 0;
+}
+
+.main-btn:hover {
+  border: 1px solid #ecd979;
+}
+
+.order-title {
+  line-height: 1.38;
+  margin-bottom: 40px;
+}
+
+.form-field {
+  display: block;
+  margin-bottom: 20px;
+}
+.form-field-com {
+  display: block;
+  margin-bottom: 40px;
+}
+
+.form-info {
+  border: 1px solid rgba(252, 249, 249, 0.1);
+  border-radius: 15px;
+  padding: 14px 16px;
+  width: 100%;
+  height: 47px;
+  color: #fcf9f9;
+  background-color: transparent;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  transition: border 350ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-info:focus,
+.form-info:hover {
+  border: 1px solid rgba(252, 249, 249, 0.6);
+}
+
+.form-comments {
+  border-radius: 8px;
+  height: 196px;
+  resize: none;
+}
+
+.form-info::placeholder,
+.form-comments::placeholder {
+  color: rgba(252, 249, 249, 0.5);
+}
+
+.form-info:not(:placeholder-shown):invalid {
+  border-color: #a72424;
+}
+
+.form-comments:focus,
+.form-comments:hover {
+  border: 1px solid rgba(252, 249, 249, 0.6);
+}
+
+.order-btn {
+  min-width: 145px;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  background-color: transparent;
+}
+
+.order-btn-icon {
+  fill: #ecd979;
+  margin-left: 10px;
+  rotate: -10deg;
+  transition: transform 0.4s ease;
+}
+
+.order-btn:hover .order-btn-icon {
+  transition: transform 0.4s ease;
+  rotate: 30deg;
+}
+
+@media screen and (max-width: 767px) {
+  .order-product {
     display: none;
+  }
 }
 
-@media screen and (min-width: 320px) {
-   
-    .order-container{
-        display: flex;
-        flex-direction: row;
-        gap: 40px;
-        
+@media screen and (min-width: 768px) {
+  .order {
+    background-image: url(/img/order/grey-bg-ornament.png);
+    background-repeat: no-repeat;
+    background-size: 545px 484px;
+    background-position: calc(50% - 334px) calc(100% - 49px);
+  }
+  @media screen and (min-resolution: 2dppx), (min-resolution: 192dpi) {
+    .order {
+      background-image: url(/img/order/grey-bg-ornament@2x.png);
     }
-
-
-    .your-order-review-form {
-    /* font-weight: 500;
-    font-size: 32px;
-    line-height: 1.375;
-    letter-spacing: -0.03em;
-    color:  #fcf9f9; 
-    margin-bottom: 40px; */
-    letter-spacing: 0.026em;
-    padding: 40px 20px;
-    }
-
-    .accent-color {
-    color: #ecd979;
-    }
-
-
-    .review-form-input {
-    border-radius: 15px;
-    padding: 14px 16px;
-    width: 335px;
-    height: 47px;
-    margin-bottom: 20px;
-    background-color: #1c2225;
-    }
-
-.review-form-field-label {
-font-weight: 400;
-font-size: 14px;
-letter-spacing: -0.02em;
-color: rgba(252, 249, 249, 0.5);
-}
-
-.review-form-messege{
- border: 1px solid rgba(252, 249, 249, 0.1);
-border-radius: 8px;
-padding: 14px 16px;
-width: 335px;
-height: 196px;
-margin-bottom: 40px;
-font-size: 14px;
-letter-spacing: -0.02em;
-color: rgba(252, 249, 249, 0.5);
-background: #1c2225;
-resize: none;
-}
-
-.order-btn{ 
-display: block;
-align-items: center;
-border: 1px solid rgba(252, 249, 249, 0.1);
-border-radius: 15px;
-padding: 14px 36px;
-max-width: 145px;
-height: 49px;
-position: relative;
-font-weight: 600;
-font-size: 14px;
-letter-spacing: -0.04em;
-text-transform: uppercase;
-color: #fcf9f9;
-background-color: #1c2225;
-}
-
-.order-btn-icon{
-     fill: #ecd979;
-     position: absolute;
-     top: 50%;
-     transform: translateY(-50%);
-     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
-     padding-left: 10px;
-     }
-    }
-
- @media screen and (min-width: 768px) {
-        .order-section{
-
-        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(/img/ornament-gray.png);
-        background-repeat: no-repeat;
-        background-position: right bottom 18px;
-
-     }
-     
-    .order-section-picture {
-    display: flex;
-    flex-direction: column-reverse;
-
-     }
-
-     .picture{
-        display: block;
-        margin: 50px auto 50px 32px;
-        border-radius: 4px;  
-    }
-    
-    .your-order-review-form {
-        margin: 50px auto 40px 32px;
-        padding: 0;
-    }
-
-     .review-form{
-        max-width: 508px;
-
-     }
-
-     .order-form-block{
-        margin-left: 32px;
-     }
-
-
-     .review-form-input{
-        max-width: 508px;
-     }
-
-     .review-form-messege{
-        max-width: 508px;
-             }
-
-     .order-btn{
+  }
+  .order-title {
+    line-height: 1.32;
+    max-width: 542px;
+  }
+  .form-info {
+    width: 508px;
+    height: 50px;
+    font-size: 16px;
+  }
+  .form-comments {
+    height: 196px;
+  }
+  .order-btn {
+    padding: 14px 39px;
     width: 168px;
     height: 50px;
-    padding: 14px 39px;
-    margin-bottom: 50px;
-     }
+    font-size: 16px;
+    margin-left: 0;
+  }
+  .order-product-image {
+    border-radius: 4px;
+    width: 704px;
+  }
+  .is-order {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+  }
 
-    .order-conatiner {
-    position: relative;
+  @media screen and (max-width: 1279px) {
+    .order {
+      padding: 50px 0 130px;
     }
-
-    .order-conatiner:after {
-        content: '';
-        background-image: url(/img/ornament-gold.png);
-        position: absolute;
-        width: 450px;
-        height: 400px;
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: bottom;
-        left: 50%;
-        bottom: -23%;
-        transform: translateX(-50%);
-    }
-
-
-
-    }
-
-     @media screen and (min-width: 768px) and (min-resolution: 192dpi) {
-        .order-section {
-        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(/img/ornament-gray.png) ;
-        background-position: left;
-        overflow: hidden;
-        }
-        }
-
-
-
-
-     @media screen and (min-width: 1280px) {
-
-    .order-section {
-        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(/img/ornament-gray.png) ;
-        background-position: left;
-        overflow: hidden;
-    }
+  }
 }
 
-.order-section-picture{
-display: flex;
-flex-direction: row;
+@media screen and (min-width: 1280px) {
+  .order {
+    background-image: url(/img/order/grey-bg-ornament.png);
+    background-repeat: no-repeat;
+    background-size: 545px 484px;
+    background-position: calc(50% - 624px) calc(100% - 129px);
+  }
+  @media screen and (min-resolution: 2dppx), (min-resolution: 192dpi) {
+    .order {
+      background-image: url(/img/order/grey-bg-ornament@2x.png);
+    }
+  }
+
+  .order-title {
+    max-width: 542px;
+  }
+  .order-product-image {
+    width: 588px;
+  }
+  .is-order {
+    flex-direction: row-reverse;
+    gap: 50px;
+  }
 }
 
-.picture{
-    margin: 75px auto;
-    padding-left: 50px;
-    padding-right: 50px;
+@media screen and (min-width: 1440px) {
+  .order {
+    background-image: url(/img/order/grey-bg-ornament.png);
+    background-repeat: no-repeat;
+    background-size: 545px 484px;
+    background-position: calc(50% - 669px) calc(100% - 131px);
+  }
+  @media screen and (min-resolution: 2dppx), (min-resolution: 192dpi) {
+    .order {
+      background-image: url(/img/order/grey-bg-ornament@2x.png);
+    }
+  }
+  .section-padding {
+    padding: 75px 0;
+  }
+
+  .order-title {
+    max-width: 666px;
+  }
+  .order-product-image {
+    width: 524px;
+  }
 }
-
-.your-order-review-form {
-    margin: 75px 20px 40px;
-    padding: 0;
-}
-
-
