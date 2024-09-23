@@ -1,4 +1,5 @@
-Макет Проєкту - https://www.figma.com/design/jX7XBtk88w2TeFQZztcGFe/Vyshyvanka-Vibes?node-id=0-1&node-type=canvas&t=etbIbaLbLmKhXxUd-0
+Макет Проєкту **ВИШИВАНКА** 
+- https://www.figma.com/design/jX7XBtk88w2TeFQZztcGFe/Vyshyvanka-Vibes?node-id=0-1&node-type=canvas&t=etbIbaLbLmKhXxUd-0
 ![image](https://github.com/user-attachments/assets/4871a9ad-85ad-4509-adae-fcc1037f19ac)
 
 Цікаві моменти.
